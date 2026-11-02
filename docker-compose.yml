@@ -3,6 +3,7 @@ version: "3.8"
 services:
   slack-tts:
     build: .
+    pull_policy: build
     container_name: slack-tts
     restart: unless-stopped
     environment:
